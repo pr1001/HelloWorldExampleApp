@@ -1,16 +1,10 @@
-
-
 import sbt._
 
 class LiftProject(info: ProjectInfo) extends DefaultWebProject(info) {
-  val mavenLocal = "Local Maven Repository" at
-  "file://"+Path.userHome+"/.m2/repository"
-
-   val scalatoolsSnapshot = "Scala Tools Snapshot" at
-  "http://scala-tools.org/repo-snapshots/"
-
-  val scalatoolsRelease = "Scala Tools Snapshot" at
-  "http://scala-tools.org/repo-releases/"
+  // val mavenLocal = "Local Maven Repository" at "file://"+Path.userHome+"/.m2/repository"
+  val scalatoolsSnapshot = "Scala Tools Snapshot" at "http://scala-tools.org/repo-snapshots/"
+  // val scalatoolsRelease = "Scala Tools Release" at "http://scala-tools.org/repo-releases/"
+  val bubblefoundry = "Bubble Foundry Maven Repo" at "http://maven.bubblefoundry.com"
 
   val liftVersion = "2.3-SNAPSHOT"
 
@@ -21,5 +15,5 @@ class LiftProject(info: ProjectInfo) extends DefaultWebProject(info) {
     "junit" % "junit" % "4.5" % "test->default",
     "org.scala-tools.testing" % "specs" % "1.6.1" % "test->default",
     "net.lift_modules" %% "helloworld" % "1.0"
-  ) ++ super.libraryDependencies
+  ) ++ super.libraryDependencies  
 }
