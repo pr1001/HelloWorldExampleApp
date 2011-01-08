@@ -11,7 +11,7 @@ This app uses Scala 2.81 and Lift 2.3-SNAPSHOT. You can run it by checking out t
     ...
     > jetty
 
-If you get errors with the update task, it may be because I am currently (2011-01-08) having problems with my web server which mosts the HelloWorld jar. Despite such errors, you should still be able to successfully run the app with the jetty task.
+If you get errors with the update task, it may be because I am currently (2011-01-08) having problems with my web server which hosts the HelloWorld jar. Despite such errors, you should still be able to successfully run the app with the jetty task.
 
 ## Authors
 
