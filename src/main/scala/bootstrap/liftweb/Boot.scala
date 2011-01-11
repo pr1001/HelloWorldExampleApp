@@ -6,14 +6,14 @@ import _root_.net.liftweb.http.{LiftRules, NotFoundAsTemplate, ParsePath}
 import _root_.net.liftweb.sitemap.{SiteMap, Menu, Loc}
 import _root_.net.liftweb.util.{ NamedPF }
 
-import net.lift_modules.HelloWorld.HelloWorld
+import net.liftmodules.HelloWorld.HelloWorld
 
 class Boot {
   def boot {
   
   
     // where to search snippet
-    LiftRules.addToPackages("net.lift_modules.HelloWorldExampleApp")
+    LiftRules.addToPackages("net.liftmodules.HelloWorldExampleApp")
 
     // build sitemap
     val entries = List(Menu("Home") / "index") :::

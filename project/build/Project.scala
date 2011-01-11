@@ -14,6 +14,6 @@ class LiftProject(info: ProjectInfo) extends DefaultWebProject(info) {
     "org.mortbay.jetty" % "jetty" % "6.1.22" % "test->default",
     "junit" % "junit" % "4.5" % "test->default",
     "org.scala-tools.testing" % "specs" % "1.6.1" % "test->default",
-    "net.lift_modules" %% "helloworld" % "1.0"
+    "net.liftmodules" %% "helloworld" % "1.0"
   ) ++ super.libraryDependencies  
 }
